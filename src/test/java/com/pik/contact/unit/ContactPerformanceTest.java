@@ -8,8 +8,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class ContactPerformanceTest {
 
-    @Test (timeout = 0)
-    public void can_be_updated() {
+    @Test (timeout = 1)
+    public void can_be_updated() throws InterruptedException {
+        Thread.sleep(2);
         Contact contact = aContact("John", "Doe");
 
         contact.updateWith(aContact("John", "Smith"));
