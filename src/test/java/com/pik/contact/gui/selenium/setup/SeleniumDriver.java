@@ -11,6 +11,8 @@ public class SeleniumDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
+            System.setProperty("webdriver.gecko.driver",
+                    "C:\\Users\\abhin\\drivers\\firefox\\geckodriver.exe");
             driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         }
