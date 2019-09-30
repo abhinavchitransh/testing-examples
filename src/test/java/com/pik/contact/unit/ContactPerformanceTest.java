@@ -10,7 +10,6 @@ public class ContactPerformanceTest {
 
     @Test (timeout = 1)
     public void can_be_updated() throws InterruptedException {
-        //Thread.sleep(2);
         Contact contact = aContact("John", "Doe");
 
         contact.updateWith(aContact("John", "Smith"));
