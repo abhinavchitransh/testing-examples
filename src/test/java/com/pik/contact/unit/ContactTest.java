@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class ContactTest {
 
-    @Test (timeout = 100)
+    @Test (timeout = 1)
     public void can_be_updated() {
         Contact contact = aContact("John", "Doe");
 
