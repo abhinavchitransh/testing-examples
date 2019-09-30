@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Unit Tests') {
             steps {
-                bat 'mvn surefire:test'
+                bat 'mvn test'
             }
         }
          stage('Integration Tests') {
